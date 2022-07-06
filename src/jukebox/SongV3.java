@@ -50,7 +50,7 @@ class MockSongs1 {
         songs.add(new SongV3("cassidy", "grateful dead", 158));
         songs.add(new SongV3("$10", "hitchhiker", 140));
         songs.add(new SongV3("havana", "cabello", 105));
-        songs.add(new SongV3("Caddidy", "grareful dead", 158));
+        songs.add(new SongV3("cassidy", "grateful dead", 158));
         songs.add(new SongV3("50 ways", "simon", 102));
         return songs;
     }
