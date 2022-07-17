@@ -16,6 +16,9 @@ public class JavaFileTutorial {
             e.getStackTrace();
         }
 
+//the above example I created a file object named file. The file object is linked with the specified file path.
+//  File file = new File("newFile.txt");
+
 
         char[] array = new char[100];
         try {
@@ -52,10 +55,9 @@ public class JavaFileTutorial {
     }
 }
 
-//the above example I created a file object named file. The file object is linked with the specified file path.
-//  File file = new File("newFile.txt");
 
 
 
 
 // source: https://www.programiz.com/java-programming/file
+// https://www.programiz.com/java-programming/file
