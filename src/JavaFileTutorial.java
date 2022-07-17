@@ -1,4 +1,6 @@
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
 public class JavaFileTutorial {
     public static void main(String[] args) {
@@ -15,11 +17,31 @@ public class JavaFileTutorial {
         } catch (Exception e) {
             e.getStackTrace();
         }
+
+
+        char[] array = new char[100];
+        try {
+            // Creates a reader using the FileReader
+            FileReader input = new FileReader("input.txt");
+
+            //Reads characters
+            input.read(array);
+            System.out.println("Data in the file:");
+            System.out.println(array);
+
+            //Close the reader
+            input.close();
+
+        } catch (Exception e) {
+           e.getStackTrace();
+        }
     }
 }
 
 //the above example I created a file object named file. The file object is linked with the specified file path.
 //  File file = new File("newFile.txt");
+
+
 
 
 // source: https://www.programiz.com/java-programming/file
