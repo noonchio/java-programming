@@ -1,6 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 public class JavaFileTutorial {
     public static void main(String[] args) {
@@ -34,6 +32,22 @@ public class JavaFileTutorial {
 
         } catch (Exception e) {
            e.getStackTrace();
+        }
+
+        String data = "This is the data in the output file";
+        try {
+            //Creates a Writer using FileWriter
+            FileWriter output = new FileWriter("output.txt");
+
+            //Writes string to the file
+            output.write(data);
+            System.out.println("Data is written to the file.");
+
+            //Closes the writer
+            output.close();
+
+        } catch (Exception e) {
+            e.getStackTrace();
         }
     }
 }
