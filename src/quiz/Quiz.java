@@ -107,10 +107,44 @@ public class Quiz implements ActionListener {
         buttonD.setText("D");
         buttonD.setBackground(Color.black);
 
+        answer_labelA.setBounds(125, 100, 500, 100);
+        answer_labelA.setBackground(new Color(50,50,50));
+        answer_labelA.setForeground(new Color(25, 255,0));
+        answer_labelA.setFont(new Font("Ink Free", Font.PLAIN, 35));
+
+
+        answer_labelB.setBounds(125, 200, 500, 100);
+        answer_labelB.setBackground(new Color(50,50,50));
+        answer_labelB.setForeground(new Color(25, 255,0));
+        answer_labelB.setFont(new Font("Ink Free", Font.PLAIN, 35));
+
+        answer_labelC.setBounds(125, 300, 500, 100);
+        answer_labelC.setBackground(new Color(50,50,50));
+        answer_labelC.setForeground(new Color(25, 255,0));
+        answer_labelC.setFont(new Font("Ink Free", Font.PLAIN, 35));
+
+        answer_labelD.setBounds(125, 400, 500, 100);
+        answer_labelD.setBackground(new Color(50,50,50));
+        answer_labelD.setForeground(new Color(25, 255,0));
+        answer_labelD.setFont(new Font("Ink Free", Font.PLAIN, 35));
+
+        seconds_left.setBounds(435, 410, 100,100);
+        seconds_left.setBackground(new Color(25,25,25));
+        seconds_left.setForeground(new Color(25,255,0));
+        seconds_left.setFont(new Font("Ink Free", Font.BOLD, 60));
+        seconds_left.setBorder(BorderFactory.createBevelBorder(1));
+        seconds_left.setOpaque(true);
+        seconds_left.setHorizontalAlignment(JTextField.CENTER);
+        seconds_left.setText(String.valueOf(seconds));
 
 
 
 
+        frame.add(seconds_left);
+        frame.add(answer_labelA);
+        frame.add(answer_labelB);
+        frame.add(answer_labelC);
+        frame.add(answer_labelD);
         frame.add(buttonA);
         frame.add(buttonB);
         frame.add(buttonC);
